@@ -1,4 +1,4 @@
-function y=horner(c,p,x) % a p : vector , x : scalar
+function y=horner(c,p,x) 
 
 y=c(size(c,2));
 %Horner method using nested forms 
