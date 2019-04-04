@@ -1,0 +1,12 @@
+% [p1 ... pn] , [v1, ... vn] -> n = degree of polynomial 
+
+function y=newton( p , v , x ) % p : base points , v : values corresponding to p , x : evaluation point
+
+n = size(p)
+
+% Coeffecient loop
+%Horner iteration for coefficients -> use newton_eval
+%[c1 .. cn] coefficients : c_n = ( v_n - newton_eval( .. ) ) / Q
+%c = [ c (v_n - newton_eval(c,)
+%Q = (p_n - p_0)* .. * (p_n - p_n-1)  -> another loop occurs while getting Q
+%
