@@ -1,4 +1,5 @@
 from math import log as log
+import time
 
 #Horner; c_i : coeff. , x : eval.
 def horner(c,p,x):
@@ -18,5 +19,9 @@ def newton(p,v,x):
    print(c)
    return horner(c,p,x)
 
-print(horner([1,1,1],[1,2],2))
-print(newton([1,2,3,4],[log(1),log(2),log(3),log(4)],5/2))
+#print(horner([1,1,1],[1,2],2))
+start = time.time()
+print(newton([1,2,3,4],[log(1),log(2),log(3),log(4)],2.5))
+end = time.time()
+
+print(end-start)
