@@ -1,5 +1,4 @@
 function y=newton( p , v , x )
-% p_i : base points , v_i : f(p_i) , x : eval. point
 
 c=v(1);
 tic
@@ -13,3 +12,5 @@ end
 c
 y=horner(c,p,x)
 toc
+
+

@@ -25,3 +25,5 @@ print(newton([1,2,3,4],[log(1),log(2),log(3),log(4)],2.5))
 end = time.time()
 
 print(end-start)
+
+
