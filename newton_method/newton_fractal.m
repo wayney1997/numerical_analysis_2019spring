@@ -6,7 +6,7 @@ xt(1)= 2.094551481542327;
 xt(2)=-1.047275740771163 + 1.135939889088928i;
 xt(3)=-1.047275740771163 - 1.135939889088928i;
 
-n=450;
+n=250;
 
 rx=linspace(-1.5,2.5,n);
 ix=linspace(-1.5,1.5,n);
@@ -17,7 +17,7 @@ for m=1:n
     for j=1:n
         x=rx(m)+ix(j)*i;
         
-        for k=1:20
+        for k=1:25
             x=x-f(x)/df(x);
         end
         
@@ -31,8 +31,6 @@ for m=1:n
         
     end
 end
-
-return ; 
 
 z=rot90(z);
 figure; imagesc(z)
