@@ -1,4 +1,4 @@
-function plot_Bzr(f,n)
+function Bzr(f,n)
 
 P(1,:)=f(1:2);
 P(2,:)=f(3:4);
